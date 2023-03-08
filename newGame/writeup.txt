@@ -1,0 +1,30 @@
+3/6/2023:
+	
+	This is the first day that I start my project!
+	I first created a world, where we defined our borders
+	I then imported a sprite sheet split of the animations as well as created the animations
+	I got a little bit ahead by creating the animations, but i think they look cool!
+	I learned quite a bit about movement using vectors in game development:
+		Think about a graph: 
+			Right = (1,0), Left = (-1,0)
+			
+
+3/7/2023:
+	
+	Today I added a more natural feel to the movements by adding:
+		Friction
+		Acceleration
+		Max speed
+	There was an issue with the speed multiplying when moving diagonally:
+		This was fixed by implementing normalization:
+			The vector is capped, it used to go beyond our x,y coordinates
+			using normalization our point is set to the max of our x,y coordinate
+		
+	I added collisions, very easy
+	
+	Added bush collisions using capsule boxes
+	created bush scene then inserted bush
+	y-sort so player stays on top of bush until behind
+	
+	ANIMATION TREES!
+	
