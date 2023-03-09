@@ -34,3 +34,21 @@
 	e.g: if our vector is at (1,0), set our blend position to (1,0) for idle and run
 	this will allow us to move right and also idle right
 	
+	AUTOTILING:
+	Sort of writing this the day after, but I figured out autotiling
+	First we need a tile atlas. Then create a new tilemap node under our world tree
+	Right side, click tileset dropdown->new tileset
+	drag our tile atlas in, then on the right go to:
+		Terrain Sets->New Terrain
+		Mode=Match corners
+		Go to TileSet tab below, click paint->terrain:
+			terrain set 0
+			terrain 0
+			highlight the entire atlas
+			then block by block just select all the pieces that don't have pixel imperfections
+			
+3/8/2023
+	
+		
+		
+		
