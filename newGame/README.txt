@@ -48,7 +48,23 @@
 			then block by block just select all the pieces that don't have pixel imperfections
 			
 3/8/2023
-	
+
+	Added a cliff tileset. Kind of having a hard time understanding how tilesets work now
+	Added collision as well:
+		Right side tab, Physics Layers-> new
+		Click on TileSet tab
+		select the entire thing why not
+		scroll down Physics->Physics layer 0
+		press F and it will highlight everything
+		done collisions added vry ez
+		
+	set up attack animations
+	state machine in animation tree
+	moved movement code into it's own state functions
+	using ENUMs to switch between MOVE and ATTACK
+	switch statement in our physics to either call move or attack
+	method call key insert to stop looping of attack (switch back to MOVE)
+	also learned about input maps
 		
 		
 		
