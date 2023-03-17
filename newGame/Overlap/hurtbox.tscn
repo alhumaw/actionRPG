@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://q01xey42ybm8"]
+
+[ext_resource type="Script" path="res://Overlap/hurtbox.gd" id="1_vf7cl"]
+
+[node name="Hurtbox" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+monitorable = false
+script = ExtResource("1_vf7cl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="invincibility_ended" from="." to="." method="_on_invincibility_ended"]
+[connection signal="invinicibility_started" from="." to="." method="_on_invinicibility_started"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

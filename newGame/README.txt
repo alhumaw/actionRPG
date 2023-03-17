@@ -65,6 +65,51 @@
 	switch statement in our physics to either call move or attack
 	method call key insert to stop looping of attack (switch back to MOVE)
 	also learned about input maps
-		
+
+3/9/2023
+
+	Learning how to instance scenes by creating a grass effect animation when player swings
+	Using animatedSprite2D to handle our animations, then created a script which essentially says "play this when called"
+	and delete this when the animation is done.
+	I then loaded the scene in our grass scripted, instantiated an object for it
+	then played the animation on top of the grass!
+	
+	Created hurtboxes for the grass and hitboxes for the player attack zone
+	Used rotational key automation to switch the direction of the hitbox to the direction of the player swing
+	Utlized signals to say "hey when the hitbox overlaps with the hurtbox, destroy grass"
+	
+
+3/9/2023
+	Made a bat! obtained a greater understanding of 'move_and_slide'.
+	constantly have to pass in velocity for knockback to work.
+	
+
+3/15/2023
+	Inheritance stuff.
+	getters and setter
+	Enemy health
+	
+	Made the slime look like it's recoiling in the opposite direction of the hit.
+	In the idle_state function, checking the direction of the knockback and setting 
+	the dir.x value accordingly. This will allow us to use the dir vector as the blend_position 
+	parameter to control the direction that the slime is facing in the idle animation.
+	However, there's a small issue with the idle_state function. The set function expects a Vector2 
+	parameter for the blend_position argument, but you're passing in a single float value (dir.x). 
+	To fix this, you can create a Vector2 with the X value set to dir.x and the Y value set to 0.0, 
+	since the slime is facing horizontally.
+	
+	
+3/17/2023
+	Finally got the AI to be at a comfortable speed
+	Added health bar functionality (and player health)
+	Added tree :D
+	Added camera :O
+	Lighting now needs to be sorted out. generally just want to have a sun effect
+	Soft collisions added so bats no longer overlap.
+	Don't know if it is quite necessary yet for slimes
+	
+	
+	
+	
 		
 		
